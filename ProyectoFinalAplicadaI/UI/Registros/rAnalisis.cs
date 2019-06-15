@@ -24,6 +24,9 @@ namespace ProyectoFinalAplicadaI.UI.Consultas
             LLenarComboBox2();
             this.Detalle = new List<AnalisisDetalle>();
 
+            UsuariocomboBox.Text = null;
+            TipoAnalisiscomboBox.Text = null;
+
         }
 
 
@@ -55,6 +58,8 @@ namespace ProyectoFinalAplicadaI.UI.Consultas
         {
             AnalisisIdnumericUpDown.Value = 0;
             UsuariocomboBox.Text = string.Empty;
+            TipoAnalisiscomboBox.Text = string.Empty;
+            ResultadotextBox.Text = string.Empty;
             errorProvider.Clear();
             this.Detalle = new List<AnalisisDetalle>();
             CargarGrid();
@@ -238,10 +243,10 @@ namespace ProyectoFinalAplicadaI.UI.Consultas
         {
             if (detalleDataGridView.Rows.Count > 0 && detalleDataGridView.CurrentRow != null)
             {
-
+                //remover la fila
                 Detalle.RemoveAt(detalleDataGridView.CurrentRow.Index);
 
-
+                CargarGrid();
             }
         }
 

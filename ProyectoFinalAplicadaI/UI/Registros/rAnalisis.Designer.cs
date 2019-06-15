@@ -86,7 +86,7 @@
             this.groupBox1.Location = new System.Drawing.Point(22, 160);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(406, 293);
-            this.groupBox1.TabIndex = 2;
+            this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos";
             // 
@@ -130,7 +130,7 @@
             this.label5.Location = new System.Drawing.Point(211, 25);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(76, 17);
-            this.label5.TabIndex = 3;
+            this.label5.TabIndex = 10;
             this.label5.Text = "Resultado:";
             // 
             // ResultadotextBox
@@ -138,7 +138,7 @@
             this.ResultadotextBox.Location = new System.Drawing.Point(214, 55);
             this.ResultadotextBox.Name = "ResultadotextBox";
             this.ResultadotextBox.Size = new System.Drawing.Size(131, 22);
-            this.ResultadotextBox.TabIndex = 2;
+            this.ResultadotextBox.TabIndex = 1;
             // 
             // label4
             // 
@@ -155,13 +155,15 @@
             this.Agregarbutton.Location = new System.Drawing.Point(351, 48);
             this.Agregarbutton.Name = "Agregarbutton";
             this.Agregarbutton.Size = new System.Drawing.Size(35, 35);
-            this.Agregarbutton.TabIndex = 7;
+            this.Agregarbutton.TabIndex = 2;
             this.Agregarbutton.UseVisualStyleBackColor = true;
             this.Agregarbutton.Click += new System.EventHandler(this.Agregarbutton_Click);
             // 
             // TipoAnalisiscomboBox
             // 
             this.TipoAnalisiscomboBox.FormattingEnabled = true;
+            this.TipoAnalisiscomboBox.Items.AddRange(new object[] {
+            " "});
             this.TipoAnalisiscomboBox.Location = new System.Drawing.Point(15, 55);
             this.TipoAnalisiscomboBox.Name = "TipoAnalisiscomboBox";
             this.TipoAnalisiscomboBox.Size = new System.Drawing.Size(138, 24);
@@ -195,10 +197,12 @@
             // UsuariocomboBox
             // 
             this.UsuariocomboBox.FormattingEnabled = true;
+            this.UsuariocomboBox.Items.AddRange(new object[] {
+            "   rtg"});
             this.UsuariocomboBox.Location = new System.Drawing.Point(104, 111);
             this.UsuariocomboBox.Name = "UsuariocomboBox";
             this.UsuariocomboBox.Size = new System.Drawing.Size(180, 24);
-            this.UsuariocomboBox.TabIndex = 11;
+            this.UsuariocomboBox.TabIndex = 0;
             // 
             // errorProvider
             // 
@@ -237,7 +241,7 @@
             this.Guardarbutton.Location = new System.Drawing.Point(181, 474);
             this.Guardarbutton.Name = "Guardarbutton";
             this.Guardarbutton.Size = new System.Drawing.Size(75, 62);
-            this.Guardarbutton.TabIndex = 9;
+            this.Guardarbutton.TabIndex = 2;
             this.Guardarbutton.Text = "Guardar";
             this.Guardarbutton.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.Guardarbutton.UseVisualStyleBackColor = true;
