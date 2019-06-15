@@ -12,7 +12,6 @@ namespace ProyectoFinalAplicadaI.DAL
     {
         public DbSet<Usuarios> Usuarios { get; set; }
 
-        public DbSet<Cargos> Cargos { get; set; }
 
         public DbSet<TipoAnalisis> TipoAnalisis { get; set; }
 

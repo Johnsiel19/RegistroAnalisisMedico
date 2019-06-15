@@ -41,13 +41,6 @@ namespace ProyectoFinalAplicadaI
 
         }
 
-        private void CargosToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            cCargos frm = new cCargos();
-            frm.StartPosition = FormStartPosition.CenterScreen;
-            frm.Show();
-
-        }
 
         private void AnalisisToolStripMenuItem_Click(object sender, EventArgs e)
         {
