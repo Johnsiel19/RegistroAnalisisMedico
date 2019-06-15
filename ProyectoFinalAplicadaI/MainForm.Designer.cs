@@ -32,10 +32,10 @@
             this.registroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.usuarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cargoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.analisisToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.consultasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.usuariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cargosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.analisisToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -72,8 +72,15 @@
             // 
             this.cargoToolStripMenuItem.Name = "cargoToolStripMenuItem";
             this.cargoToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
-            this.cargoToolStripMenuItem.Text = "Cargo";
+            this.cargoToolStripMenuItem.Text = "&Tipo Analisis";
             this.cargoToolStripMenuItem.Click += new System.EventHandler(this.CargoToolStripMenuItem_Click);
+            // 
+            // analisisToolStripMenuItem
+            // 
+            this.analisisToolStripMenuItem.Name = "analisisToolStripMenuItem";
+            this.analisisToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.analisisToolStripMenuItem.Text = "&Analisis";
+            this.analisisToolStripMenuItem.Click += new System.EventHandler(this.AnalisisToolStripMenuItem_Click);
             // 
             // consultasToolStripMenuItem
             // 
@@ -97,13 +104,6 @@
             this.cargosToolStripMenuItem.Size = new System.Drawing.Size(140, 26);
             this.cargosToolStripMenuItem.Text = "Cargos";
             this.cargosToolStripMenuItem.Click += new System.EventHandler(this.CargosToolStripMenuItem_Click);
-            // 
-            // analisisToolStripMenuItem
-            // 
-            this.analisisToolStripMenuItem.Name = "analisisToolStripMenuItem";
-            this.analisisToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
-            this.analisisToolStripMenuItem.Text = "Analisis";
-            this.analisisToolStripMenuItem.Click += new System.EventHandler(this.AnalisisToolStripMenuItem_Click);
             // 
             // MainForm
             // 

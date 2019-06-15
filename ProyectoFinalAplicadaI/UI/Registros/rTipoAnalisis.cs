@@ -23,7 +23,7 @@ namespace ProyectoFinalAplicadaI.UI.Registros
 
         private void Limpiar()
         {
-            UbicacionIdnumericUpDown.Value = 0;
+            TipoAnalisisiIdnumericUpDown.Value = 0;
             DescripciontextBox.Text = string.Empty;
 
         }
@@ -31,7 +31,7 @@ namespace ProyectoFinalAplicadaI.UI.Registros
         public TipoAnalisis LlenaClase()
         {
             TipoAnalisis tipoanalisis = new TipoAnalisis();
-            tipoanalisis.TipoAnalisisId = Convert.ToInt32(UbicacionIdnumericUpDown.Value);
+            tipoanalisis.TipoAnalisisId = Convert.ToInt32(TipoAnalisisiIdnumericUpDown.Value);
             tipoanalisis.Descripcion = DescripciontextBox.Text;
 
             return tipoanalisis;
@@ -39,14 +39,14 @@ namespace ProyectoFinalAplicadaI.UI.Registros
 
         private void LlenaCampo(TipoAnalisis tipoanalisis)
         {
-            UbicacionIdnumericUpDown.Value = tipoanalisis.TipoAnalisisId;
+            TipoAnalisisiIdnumericUpDown.Value = tipoanalisis.TipoAnalisisId;
             DescripciontextBox.Text = tipoanalisis.Descripcion;
 
         }
 
         private bool ExisteEnLaBaseDeDatos()
         {
-            TipoAnalisis tipoanalisis = TipoAnalalisisBLL.Buscar((int)UbicacionIdnumericUpDown.Value);
+            TipoAnalisis tipoanalisis = TipoAnalalisisBLL.Buscar((int)TipoAnalisisiIdnumericUpDown.Value);
             return (tipoanalisis != null);
 
         }
@@ -98,7 +98,7 @@ namespace ProyectoFinalAplicadaI.UI.Registros
 
             TipoAnalisis tipoanalisis = new TipoAnalisis();
 
-            int.TryParse(UbicacionIdnumericUpDown.Text, out id);
+            int.TryParse(TipoAnalisisiIdnumericUpDown.Text, out id);
             Limpiar();
 
             tipoanalisis = TipoAnalalisisBLL.Buscar(id);
@@ -119,7 +119,7 @@ namespace ProyectoFinalAplicadaI.UI.Registros
         {
             errorProvider.Clear();
             int id;
-            int.TryParse(UbicacionIdnumericUpDown.Text, out id);
+            int.TryParse(TipoAnalisisiIdnumericUpDown.Text, out id);
             Limpiar();
             if (TipoAnalalisisBLL.Eliminar(id))
             {
@@ -127,7 +127,7 @@ namespace ProyectoFinalAplicadaI.UI.Registros
             }
             else
             {
-                errorProvider.SetError(UbicacionIdnumericUpDown, "No se puede elimina, porque no existe");
+                errorProvider.SetError(TipoAnalisisiIdnumericUpDown, "No se puede elimina, porque no existe");
             }
         }
 
@@ -148,7 +148,7 @@ namespace ProyectoFinalAplicadaI.UI.Registros
             tipoanalisis = LlenaClase();
 
 
-            if (UbicacionIdnumericUpDown.Value == 0)
+            if (TipoAnalisisiIdnumericUpDown.Value == 0)
             {
                 paso = TipoAnalalisisBLL.Guardar(tipoanalisis);
 

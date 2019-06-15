@@ -32,7 +32,7 @@ namespace ProyectoFinalAplicadaI.UI.Consultas
             var listado = new List<Usuarios>();
             listado = UsuariosBLL.GetList(p => true);
             UsuariocomboBox.DataSource = listado;
-            UsuariocomboBox.DisplayMember = "UsuarioId";
+            UsuariocomboBox.DisplayMember = "Usuario";
             UsuariocomboBox.ValueMember = "UsuarioId";
 
 
@@ -43,7 +43,7 @@ namespace ProyectoFinalAplicadaI.UI.Consultas
             var listado2 = new List<TipoAnalisis>();
             listado2 = TipoAnalalisisBLL.GetList(l => true);
             TipoAnalisiscomboBox.DataSource = listado2;
-            TipoAnalisiscomboBox.DisplayMember = "TipoAnalisisId";
+            TipoAnalisiscomboBox.DisplayMember = "Descripcion";
             TipoAnalisiscomboBox.ValueMember = "TipoAnalisisId";
 
 
@@ -65,7 +65,7 @@ namespace ProyectoFinalAplicadaI.UI.Consultas
         {
             Analisis analisis = new Analisis();
             analisis.AnalisisId = Convert.ToInt32(AnalisisIdnumericUpDown.Value);
-            analisis.UsuarioId = Convert.ToInt32( UsuariocomboBox.Text);
+            analisis.UsuarioId = Convert.ToInt32( UsuariocomboBox.SelectedValue);
             analisis.FechaAnalisis = FechadateTimePicker.Value;
             analisis.Resultado = this.Detalle;
             return analisis;
@@ -74,7 +74,7 @@ namespace ProyectoFinalAplicadaI.UI.Consultas
 
         private void LlenaCampo(Analisis analisis)
         {
-            AnalisisIdnumericUpDown.Value = analisis.UsuarioId;
+            AnalisisIdnumericUpDown.Value = analisis.AnalisisId;
             FechadateTimePicker.Value = analisis.FechaAnalisis;
             UsuariocomboBox.Text =  analisis.UsuarioId.ToString();
             this.Detalle = analisis.Resultado;
@@ -226,7 +226,7 @@ namespace ProyectoFinalAplicadaI.UI.Consultas
                 new AnalisisDetalle(
                     id: 0,
                     analisisid: (int)AnalisisIdnumericUpDown.Value,
-                    tipoanalisisid: Convert.ToInt32(TipoAnalisiscomboBox.Text),
+                    tipoanalisisid: Convert.ToInt32(TipoAnalisiscomboBox.SelectedValue),
                     resultado: ResultadotextBox.Text
                     )
                );
@@ -244,5 +244,8 @@ namespace ProyectoFinalAplicadaI.UI.Consultas
 
             }
         }
+
+    
+
     }
 }

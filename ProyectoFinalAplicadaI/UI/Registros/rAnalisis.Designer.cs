@@ -43,12 +43,12 @@
             this.label3 = new System.Windows.Forms.Label();
             this.AnalisisIdnumericUpDown = new System.Windows.Forms.NumericUpDown();
             this.FechadateTimePicker = new System.Windows.Forms.DateTimePicker();
-            this.Nuevobutton = new System.Windows.Forms.Button();
-            this.Guardarbutton = new System.Windows.Forms.Button();
-            this.Eliminarbutton = new System.Windows.Forms.Button();
             this.UsuariocomboBox = new System.Windows.Forms.ComboBox();
-            this.Buscarbutton = new System.Windows.Forms.Button();
             this.errorProvider = new System.Windows.Forms.ErrorProvider(this.components);
+            this.Eliminarbutton = new System.Windows.Forms.Button();
+            this.Buscarbutton = new System.Windows.Forms.Button();
+            this.Guardarbutton = new System.Windows.Forms.Button();
+            this.Nuevobutton = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.detalleDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.AnalisisIdnumericUpDown)).BeginInit();
@@ -85,17 +85,17 @@
             this.groupBox1.Controls.Add(this.TipoAnalisiscomboBox);
             this.groupBox1.Location = new System.Drawing.Point(22, 160);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(406, 308);
+            this.groupBox1.Size = new System.Drawing.Size(406, 293);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos";
             // 
             // AgragarTiposAnalisisbutton
             // 
-            this.AgragarTiposAnalisisbutton.Image = global::ProyectoFinalAplicadaI.Properties.Resources.add_icon_icons_com_74429;
-            this.AgragarTiposAnalisisbutton.Location = new System.Drawing.Point(156, 42);
+            this.AgragarTiposAnalisisbutton.Image = global::ProyectoFinalAplicadaI.Properties.Resources.add_insert_document_13988;
+            this.AgragarTiposAnalisisbutton.Location = new System.Drawing.Point(159, 49);
             this.AgragarTiposAnalisisbutton.Name = "AgragarTiposAnalisisbutton";
-            this.AgragarTiposAnalisisbutton.Size = new System.Drawing.Size(49, 48);
+            this.AgragarTiposAnalisisbutton.Size = new System.Drawing.Size(35, 35);
             this.AgragarTiposAnalisisbutton.TabIndex = 8;
             this.AgragarTiposAnalisisbutton.UseVisualStyleBackColor = true;
             this.AgragarTiposAnalisisbutton.Click += new System.EventHandler(this.AgragarTiposAnalisisbutton_Click);
@@ -111,11 +111,15 @@
             // 
             // Removerbutton
             // 
+            this.Removerbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Removerbutton.Image = global::ProyectoFinalAplicadaI.Properties.Resources.ic_remove_circle_outline_128_28748;
-            this.Removerbutton.Location = new System.Drawing.Point(28, 252);
+            this.Removerbutton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Removerbutton.Location = new System.Drawing.Point(15, 252);
             this.Removerbutton.Name = "Removerbutton";
-            this.Removerbutton.Size = new System.Drawing.Size(49, 43);
+            this.Removerbutton.Size = new System.Drawing.Size(168, 41);
             this.Removerbutton.TabIndex = 5;
+            this.Removerbutton.Text = "Remover Linea";
+            this.Removerbutton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Removerbutton.UseVisualStyleBackColor = true;
             this.Removerbutton.Click += new System.EventHandler(this.Removerbutton_Click);
             // 
@@ -146,10 +150,10 @@
             // 
             // Agregarbutton
             // 
-            this.Agregarbutton.Image = global::ProyectoFinalAplicadaI.Properties.Resources.add_icon_icons_com_74429;
-            this.Agregarbutton.Location = new System.Drawing.Point(351, 42);
+            this.Agregarbutton.Image = global::ProyectoFinalAplicadaI.Properties.Resources.add_insert_plus_1588;
+            this.Agregarbutton.Location = new System.Drawing.Point(351, 48);
             this.Agregarbutton.Name = "Agregarbutton";
-            this.Agregarbutton.Size = new System.Drawing.Size(49, 48);
+            this.Agregarbutton.Size = new System.Drawing.Size(35, 35);
             this.Agregarbutton.TabIndex = 7;
             this.Agregarbutton.UseVisualStyleBackColor = true;
             this.Agregarbutton.Click += new System.EventHandler(this.Agregarbutton_Click);
@@ -159,7 +163,7 @@
             this.TipoAnalisiscomboBox.FormattingEnabled = true;
             this.TipoAnalisiscomboBox.Location = new System.Drawing.Point(15, 55);
             this.TipoAnalisiscomboBox.Name = "TipoAnalisiscomboBox";
-            this.TipoAnalisiscomboBox.Size = new System.Drawing.Size(134, 24);
+            this.TipoAnalisiscomboBox.Size = new System.Drawing.Size(138, 24);
             this.TipoAnalisiscomboBox.TabIndex = 0;
             // 
             // label3
@@ -187,31 +191,17 @@
             this.FechadateTimePicker.Size = new System.Drawing.Size(180, 22);
             this.FechadateTimePicker.TabIndex = 5;
             // 
-            // Nuevobutton
+            // UsuariocomboBox
             // 
-            this.Nuevobutton.Image = global::ProyectoFinalAplicadaI.Properties.Resources.nuevo;
-            this.Nuevobutton.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.Nuevobutton.Location = new System.Drawing.Point(37, 474);
-            this.Nuevobutton.Name = "Nuevobutton";
-            this.Nuevobutton.Size = new System.Drawing.Size(75, 62);
-            this.Nuevobutton.TabIndex = 8;
-            this.Nuevobutton.Text = "Nuevo";
-            this.Nuevobutton.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.Nuevobutton.UseVisualStyleBackColor = true;
-            this.Nuevobutton.Click += new System.EventHandler(this.Nuevobutton_Click);
+            this.UsuariocomboBox.FormattingEnabled = true;
+            this.UsuariocomboBox.Location = new System.Drawing.Point(104, 111);
+            this.UsuariocomboBox.Name = "UsuariocomboBox";
+            this.UsuariocomboBox.Size = new System.Drawing.Size(180, 24);
+            this.UsuariocomboBox.TabIndex = 11;
             // 
-            // Guardarbutton
+            // errorProvider
             // 
-            this.Guardarbutton.Image = global::ProyectoFinalAplicadaI.Properties.Resources.guardar;
-            this.Guardarbutton.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.Guardarbutton.Location = new System.Drawing.Point(181, 474);
-            this.Guardarbutton.Name = "Guardarbutton";
-            this.Guardarbutton.Size = new System.Drawing.Size(75, 62);
-            this.Guardarbutton.TabIndex = 9;
-            this.Guardarbutton.Text = "Guardar";
-            this.Guardarbutton.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.Guardarbutton.UseVisualStyleBackColor = true;
-            this.Guardarbutton.Click += new System.EventHandler(this.Guardarbutton_Click);
+            this.errorProvider.ContainerControl = this;
             // 
             // Eliminarbutton
             // 
@@ -226,14 +216,6 @@
             this.Eliminarbutton.UseVisualStyleBackColor = true;
             this.Eliminarbutton.Click += new System.EventHandler(this.Eliminarbutton_Click);
             // 
-            // UsuariocomboBox
-            // 
-            this.UsuariocomboBox.FormattingEnabled = true;
-            this.UsuariocomboBox.Location = new System.Drawing.Point(104, 111);
-            this.UsuariocomboBox.Name = "UsuariocomboBox";
-            this.UsuariocomboBox.Size = new System.Drawing.Size(180, 24);
-            this.UsuariocomboBox.TabIndex = 11;
-            // 
             // Buscarbutton
             // 
             this.Buscarbutton.Image = global::ProyectoFinalAplicadaI.Properties.Resources.search_locate_find_13974;
@@ -247,9 +229,31 @@
             this.Buscarbutton.UseVisualStyleBackColor = true;
             this.Buscarbutton.Click += new System.EventHandler(this.Buscarbutton_Click);
             // 
-            // errorProvider
+            // Guardarbutton
             // 
-            this.errorProvider.ContainerControl = this;
+            this.Guardarbutton.Image = global::ProyectoFinalAplicadaI.Properties.Resources.guardar;
+            this.Guardarbutton.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.Guardarbutton.Location = new System.Drawing.Point(181, 474);
+            this.Guardarbutton.Name = "Guardarbutton";
+            this.Guardarbutton.Size = new System.Drawing.Size(75, 62);
+            this.Guardarbutton.TabIndex = 9;
+            this.Guardarbutton.Text = "Guardar";
+            this.Guardarbutton.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.Guardarbutton.UseVisualStyleBackColor = true;
+            this.Guardarbutton.Click += new System.EventHandler(this.Guardarbutton_Click);
+            // 
+            // Nuevobutton
+            // 
+            this.Nuevobutton.Image = global::ProyectoFinalAplicadaI.Properties.Resources.nuevo;
+            this.Nuevobutton.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.Nuevobutton.Location = new System.Drawing.Point(37, 474);
+            this.Nuevobutton.Name = "Nuevobutton";
+            this.Nuevobutton.Size = new System.Drawing.Size(75, 62);
+            this.Nuevobutton.TabIndex = 8;
+            this.Nuevobutton.Text = "Nuevo";
+            this.Nuevobutton.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.Nuevobutton.UseVisualStyleBackColor = true;
+            this.Nuevobutton.Click += new System.EventHandler(this.Nuevobutton_Click);
             // 
             // rAnalisis
             // 

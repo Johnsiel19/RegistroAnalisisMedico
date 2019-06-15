@@ -28,7 +28,7 @@ namespace ProyectoFinalAplicadaI
 
         private void CargoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            rCargos frm = new rCargos();
+            rTipoAnalisis frm = new rTipoAnalisis();
             frm.StartPosition = FormStartPosition.CenterScreen;
             frm.Show();
         }

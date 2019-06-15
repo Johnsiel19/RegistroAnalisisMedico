@@ -53,13 +53,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BLL\CargosBLL.cs" />
     <Compile Include="BLL\AnalisisBLL.cs" />
     <Compile Include="BLL\TipoAnalalisisBLL.cs" />
     <Compile Include="BLL\UsuariosBBL.cs" />
     <Compile Include="DAL\Contexto.cs" />
     <Compile Include="Entidades\AnalisisDetalle.cs" />
-    <Compile Include="Entidades\Cargos.cs" />
     <Compile Include="Entidades\Analisis.cs" />
     <Compile Include="Entidades\TipoAnalisis.cs" />
     <Compile Include="Entidades\Usuarios.cs" />
@@ -68,12 +66,6 @@
     </Compile>
     <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UI\Consultas\cCargos.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="UI\Consultas\cCargos.Designer.cs">
-      <DependentUpon>cCargos.cs</DependentUpon>
     </Compile>
     <Compile Include="UI\Consultas\cUsuarios.cs">
       <SubType>Form</SubType>
@@ -86,12 +78,6 @@
     </Compile>
     <Compile Include="UI\Registros\rAnalisis.Designer.cs">
       <DependentUpon>rAnalisis.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UI\Registros\rCargos.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="UI\Registros\rCargos.Designer.cs">
-      <DependentUpon>rCargos.cs</DependentUpon>
     </Compile>
     <Compile Include="UI\Registros\rTipoAnalisis.cs">
       <SubType>Form</SubType>
@@ -120,17 +106,11 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="UI\Consultas\cCargos.resx">
-      <DependentUpon>cCargos.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="UI\Consultas\cUsuarios.resx">
       <DependentUpon>cUsuarios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\Registros\rAnalisis.resx">
       <DependentUpon>rAnalisis.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UI\Registros\rCargos.resx">
-      <DependentUpon>rCargos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\Registros\rTipoAnalisis.resx">
       <DependentUpon>rTipoAnalisis.cs</DependentUpon>
@@ -172,6 +152,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="DAL\Scrip\sqlDeUsuarios%27.sql" />
+    <None Include="Resources\add_insert_document_13988.png" />
+    <None Include="Resources\add_insert_plus_1588.png" />
     <None Include="Resources\search_locate_find_13974.png" />
     <None Include="Resources\ic_remove_circle_outline_128_28748.png" />
     <None Include="Resources\add_icon-icons.com_74429.png" />
