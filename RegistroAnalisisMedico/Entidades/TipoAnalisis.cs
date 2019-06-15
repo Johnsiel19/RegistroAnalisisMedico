@@ -11,7 +11,7 @@ namespace ProyectoFinalAplicadaI.Entidades
     {
 
         [Key]
-        public int TipoAnalisisId { get; set; }
+        public int TipoAnalisisId  { get; set; }
 
         public string Descripcion { get; set; }
 
