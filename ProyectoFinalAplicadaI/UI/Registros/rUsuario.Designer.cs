@@ -89,7 +89,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(20, 128);
+            this.label3.Location = new System.Drawing.Point(19, 130);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(42, 17);
             this.label3.TabIndex = 7;
@@ -98,7 +98,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(20, 177);
+            this.label4.Location = new System.Drawing.Point(19, 177);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(92, 17);
             this.label4.TabIndex = 8;
@@ -107,7 +107,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(20, 226);
+            this.label5.Location = new System.Drawing.Point(19, 226);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(57, 17);
             this.label5.TabIndex = 9;
@@ -125,7 +125,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(14, 371);
+            this.label7.Location = new System.Drawing.Point(19, 371);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(98, 17);
             this.label7.TabIndex = 11;
@@ -166,7 +166,7 @@
             // 
             this.Nuevobutton.Image = global::ProyectoFinalAplicadaI.Properties.Resources.DocumentEdit_40924;
             this.Nuevobutton.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.Nuevobutton.Location = new System.Drawing.Point(142, 418);
+            this.Nuevobutton.Location = new System.Drawing.Point(12, 418);
             this.Nuevobutton.Name = "Nuevobutton";
             this.Nuevobutton.Size = new System.Drawing.Size(80, 70);
             this.Nuevobutton.TabIndex = 8;
@@ -205,7 +205,7 @@
             // 
             this.Guardarbutton.Image = global::ProyectoFinalAplicadaI.Properties.Resources.guardar;
             this.Guardarbutton.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.Guardarbutton.Location = new System.Drawing.Point(237, 418);
+            this.Guardarbutton.Location = new System.Drawing.Point(162, 419);
             this.Guardarbutton.Name = "Guardarbutton";
             this.Guardarbutton.Size = new System.Drawing.Size(80, 70);
             this.Guardarbutton.TabIndex = 7;
@@ -254,7 +254,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(437, 501);
+            this.ClientSize = new System.Drawing.Size(437, 518);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.ConfirmarClavetextBox);
             this.Controls.Add(this.NivelUsuariocomboBox);

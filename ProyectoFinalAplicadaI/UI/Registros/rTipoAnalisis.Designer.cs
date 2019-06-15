@@ -144,7 +144,7 @@
             this.Controls.Add(this.TipoAnalisisiIdnumericUpDown);
             this.Controls.Add(this.DescripciontextBox);
             this.Name = "rTipoAnalisis";
-            this.Text = "rTipoAnalisis";
+            this.Text = "Registro Tipos Analisis";
             ((System.ComponentModel.ISupportInitialize)(this.TipoAnalisisiIdnumericUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).EndInit();
             this.ResumeLayout(false);
