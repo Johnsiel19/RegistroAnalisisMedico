@@ -105,7 +105,7 @@ namespace ProyectoFinalAplicadaI.UI.Registros
 
             if (tipoanalisis != null)
             {
-                MessageBox.Show("ubicacion encontrado");
+
                 LlenaCampo(tipoanalisis);
 
             }

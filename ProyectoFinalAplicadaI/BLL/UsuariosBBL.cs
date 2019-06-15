@@ -7,6 +7,7 @@ using System.Data.Entity;
 using ProyectoFinalAplicadaI.DAL;
 using ProyectoFinalAplicadaI.Entidades;
 using System.Linq.Expressions;
+using System.Windows.Forms;
 
 namespace ProyectoFinalAplicadaI.BLL
 {
@@ -27,7 +28,7 @@ namespace ProyectoFinalAplicadaI.BLL
             }
             catch (Exception)
             {
-                throw;
+                MessageBox.Show("Se produjo un error al intentar Guardar");
             }
             finally
             {
@@ -48,7 +49,7 @@ namespace ProyectoFinalAplicadaI.BLL
             }
             catch (Exception)
             {
-                throw;
+                MessageBox.Show("Se produjo un error al intentar Modificar");
             }
             finally
             {
@@ -70,7 +71,7 @@ namespace ProyectoFinalAplicadaI.BLL
             }
             catch (Exception)
             {
-                throw;
+                MessageBox.Show("Se produjo un error al intentar Eliminar");
             }
             finally
             {
@@ -92,7 +93,7 @@ namespace ProyectoFinalAplicadaI.BLL
             }
             catch (Exception)
             {
-                throw;
+                MessageBox.Show("Se produjo un error al intentar Buscar");
             }
             finally
             {
@@ -114,7 +115,7 @@ namespace ProyectoFinalAplicadaI.BLL
             }
             catch
             {
-                throw;
+                MessageBox.Show("Se produjo un error al intentar Listar");
             }
             finally
             {

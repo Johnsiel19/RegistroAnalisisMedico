@@ -102,6 +102,7 @@
             // 
             // detalleDataGridView
             // 
+            this.detalleDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.detalleDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.detalleDataGridView.Location = new System.Drawing.Point(15, 100);
             this.detalleDataGridView.Name = "detalleDataGridView";

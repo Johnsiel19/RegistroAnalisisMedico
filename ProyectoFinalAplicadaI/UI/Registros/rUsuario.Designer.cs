@@ -177,11 +177,11 @@
             // 
             // Buscarbutton
             // 
-            this.Buscarbutton.Image = global::ProyectoFinalAplicadaI.Properties.Resources.buscar;
+            this.Buscarbutton.Image = global::ProyectoFinalAplicadaI.Properties.Resources.search_locate_find_13974;
             this.Buscarbutton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Buscarbutton.Location = new System.Drawing.Point(241, 12);
+            this.Buscarbutton.Location = new System.Drawing.Point(237, 20);
             this.Buscarbutton.Name = "Buscarbutton";
-            this.Buscarbutton.Size = new System.Drawing.Size(92, 51);
+            this.Buscarbutton.Size = new System.Drawing.Size(92, 39);
             this.Buscarbutton.TabIndex = 25;
             this.Buscarbutton.Text = "Buscar";
             this.Buscarbutton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;

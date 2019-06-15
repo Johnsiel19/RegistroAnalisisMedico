@@ -145,7 +145,7 @@ namespace ProyectoFinalAplicadaI.UI.Consultas
 
             if (analisis != null)
             {
-                MessageBox.Show("Producto encontrado");
+    
                 LlenaCampo(analisis);
 
             }

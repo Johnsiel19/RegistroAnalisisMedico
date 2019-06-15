@@ -121,9 +121,9 @@
             // 
             this.Buscarbutton.Image = global::ProyectoFinalAplicadaI.Properties.Resources.search_locate_find_13974;
             this.Buscarbutton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Buscarbutton.Location = new System.Drawing.Point(244, 14);
+            this.Buscarbutton.Location = new System.Drawing.Point(244, 12);
             this.Buscarbutton.Name = "Buscarbutton";
-            this.Buscarbutton.Size = new System.Drawing.Size(88, 43);
+            this.Buscarbutton.Size = new System.Drawing.Size(88, 45);
             this.Buscarbutton.TabIndex = 12;
             this.Buscarbutton.Text = "Buscar";
             this.Buscarbutton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
