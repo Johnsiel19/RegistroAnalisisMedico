@@ -85,8 +85,6 @@ namespace ProyectoFinalAplicadaI.UI.Consultas
             this.Detalle = analisis.Resultado;
             CargarGrid();
 
-
-
         }
         private bool ExisteEnLaBaseDeDatos()
         {
@@ -110,7 +108,7 @@ namespace ProyectoFinalAplicadaI.UI.Consultas
 
             if (UsuariocomboBox.Text == string.Empty)
             {
-                errorProvider.SetError(UsuariocomboBox, "El campo Nivel de Usuario no puede estar vacio");
+                errorProvider.SetError(UsuariocomboBox, "El campo Usuario no puede estar vacio");
                 UsuariocomboBox.Focus();
                 paso = false;
 
@@ -118,7 +116,7 @@ namespace ProyectoFinalAplicadaI.UI.Consultas
 
             if (TipoAnalisiscomboBox.Text == string.Empty)
             {
-                errorProvider.SetError(TipoAnalisiscomboBox, "El campo Nivel de Usuario no puede estar vacio");
+                errorProvider.SetError(TipoAnalisiscomboBox, "El Tipo Usuario no puede estar vacio");
                 TipoAnalisiscomboBox.Focus();
                 paso = false;
 
@@ -126,7 +124,7 @@ namespace ProyectoFinalAplicadaI.UI.Consultas
 
             if (ResultadotextBox.Text == string.Empty)
             {
-                errorProvider.SetError(ResultadotextBox, "El campo Usuario no puede estar vacio");
+                errorProvider.SetError(ResultadotextBox, "El campo Resultado no puede estar vacio");
                 ResultadotextBox.Focus();
                 paso = false;
             }
@@ -156,7 +154,7 @@ namespace ProyectoFinalAplicadaI.UI.Consultas
             }
             else
             {
-                MessageBox.Show("Producto no existe");
+                MessageBox.Show("Analisis no existe");
             }
 
         }
@@ -208,7 +206,7 @@ namespace ProyectoFinalAplicadaI.UI.Consultas
             {
                 if (!ExisteEnLaBaseDeDatos())
                 {
-                    MessageBox.Show("No se puede modificar una persona que no existe", "Fallo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("No se puede modificar un Analisis que no Existe", "Fallo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
                 paso = AnalisBLL.Modificar(analisis);

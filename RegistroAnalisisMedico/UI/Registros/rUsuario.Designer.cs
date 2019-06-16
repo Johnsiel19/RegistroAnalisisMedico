@@ -151,7 +151,7 @@
             this.UsuariotextBox.Name = "UsuariotextBox";
             this.UsuariotextBox.Size = new System.Drawing.Size(270, 22);
             this.UsuariotextBox.TabIndex = 3;
-            this.UsuariotextBox.TextChanged += new System.EventHandler(this.UsuariotextBox_TextChanged);
+
             // 
             // FechaIngresodateTimePicker
             // 

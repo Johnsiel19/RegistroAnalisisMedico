@@ -51,10 +51,6 @@ namespace ProyectoFinalAplicadaI.UI.Registros
 
         }
 
-
-
-
-
         public static bool NoDuplicado(string descripcion)
         {
             bool paso = false;
@@ -84,7 +80,7 @@ namespace ProyectoFinalAplicadaI.UI.Registros
             }
             if (NoDuplicado(DescripciontextBox.Text))
             {
-                MessageBox.Show("Los nombre no pueden ser iguales");
+                MessageBox.Show("Los Nombres de Analisis no pueden ser iguales");
                 DescripciontextBox.Focus();
                 paso = false;
             }
@@ -111,7 +107,7 @@ namespace ProyectoFinalAplicadaI.UI.Registros
             }
             else
             {
-                MessageBox.Show("ubicacion no existe");
+                MessageBox.Show("Tipo de Analisis no existe");
             }
         }
 

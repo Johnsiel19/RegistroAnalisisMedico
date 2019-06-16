@@ -55,8 +55,7 @@ namespace ProyectoFinalAplicadaI
             UsuariotextBox.Text = string.Empty;
             ConfirmarClavetextBox.Text = string.Empty;
             errorProvider.Clear();
-          
-
+         
         }
 
         private Usuarios LlenaClase()
@@ -189,7 +188,7 @@ namespace ProyectoFinalAplicadaI
             {
                 if (!ExisteEnLaBaseDeDatos())
                 {
-                    MessageBox.Show("No se puede modificar una persona que no existe", "Fallo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("No se puede modificar un Usuario que no existe", "Fallo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
                 paso = UsuariosBLL.Modificar(usuario);
@@ -247,9 +246,6 @@ namespace ProyectoFinalAplicadaI
             e.Handled = true;
         }
 
-        private void UsuariotextBox_TextChanged(object sender, EventArgs e)
-        {
 
-        }
     }
 }

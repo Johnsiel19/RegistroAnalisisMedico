@@ -41,26 +41,14 @@ namespace ProyectoFinalAplicadaI.BLL
             Contexto db = new Contexto();
             try
             {
-
-
-                db.Entry(analisis).State = EntityState.Modified;
-
-                paso = (db.SaveChanges() > 0);
+               
                 var Anterior = db.Analisis.Find(analisis.AnalisisId);
+                foreach (var item in Anterior.Resultado)
+                 {
 
-               /* foreach (var item in analisis.Resultado)
-                {
-
-                    if (!analisis.Resultado.Exists(d => d.AnalisisDetalleId == item.AnalisisDetalleId))
-
-                        db.Entry(item).State = EntityState.Deleted;
-
-                }*/
-               foreach (var item in Anterior.Resultado)
-                {
-                    if (!analisis.Resultado.Exists(d => d.AnalisisDetalleId == item.AnalisisDetalleId))
-                        db.Entry(item).State = EntityState.Deleted;
-                }
+                     if (!analisis.Resultado.Exists(d => d.AnalisisDetalleId == item.AnalisisDetalleId))
+                         db.Entry(item).State = EntityState.Deleted;
+                 }
                 db.Entry(analisis).State = EntityState.Modified;
                 paso = (db.SaveChanges() > 0);
 
